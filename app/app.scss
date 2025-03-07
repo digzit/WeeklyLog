@@ -1,0 +1,21 @@
+@use 'custom';
+@use 'bootstrap-icons/font/bootstrap-icons.css';
+@use 'react-big-calendar/lib/css/react-big-calendar.css';
+@use 'calendar';
+
+#menu {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  div {
+    flex: 1;
+    max-width: calc(100% / #{length(#menu div)});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  .clear {
+    font-size: large;
+  }
+}
