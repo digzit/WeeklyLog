@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# WeeklyLog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeeklyLog is a simple application to log time in intervals on a weekly view as a Chrome extension. It is built using Vite, React, TypeScript, and easy-peasy for state management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Log time in intervals on a weekly calendar view
+- Add, delete, and clear events
+- Persist events using local storage
+- Responsive and user-friendly interface
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repository:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+   ```sh
+   git clone https://github.com/digzit/WeeklyLog.git
+   cd WeeklyLog
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+## Development
+
+To start the development server, run:
+
+```sh
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will start the Vite development server and open the application in your default browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Build
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+To build the project for production, run:
+
+```sh
+npm run build
 ```
+
+The built files will be output to the `build` directory.
+
+## Usage
+
+1. Open the Chrome extension by clicking on the extension icon.
+2. Use the calendar to log your time in intervals.
+3. Add events by selecting a time slot.
+4. Delete events by clicking on an event and confirming the deletion.
+5. Clear all events using the clear button.
+
+## Data Persistence
+
+This application uses the browser's local storage to persist data. All logged events are stored locally on your device, ensuring that your data remains available even after closing the browser.
+
+## Adding to Chrome as a Developer
+
+To add this extension to Chrome as a developer, follow these steps:
+
+1. Open Chrome and navigate to `chrome://extensions/`.
+2. Enable "Developer mode" by toggling the switch in the top right corner.
+3. Click on the "Load unpacked" button.
+4. Select the `build` directory of your project.
+5. The extension should now be added to Chrome and visible in the extensions list.
