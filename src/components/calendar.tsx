@@ -1,7 +1,7 @@
 import React from 'react'
 import { Calendar as ReactBigCalendar, Views, momentLocalizer, type SlotInfo } from 'react-big-calendar'
 import moment from 'moment'
-import { useStoreActions, useStoreState } from '~/hooks/store'
+import { useStoreActions, useStoreState } from '../hooks/store'
 import { Button, Modal } from 'react-bootstrap'
 
 moment.locale('en')
@@ -108,7 +108,7 @@ const Calendar: React.FC = () => {
       <div id="menu">
         <div>
           <Button variant="light" className="clear" onClick={handleClearEvents} disabled={!events.length}>
-            <i className="bi bi-calendar2-x-fill text-primary" />
+            <i className="bi bi-calendar2-x text-primary" />
           </Button>
         </div>
         <div>Total: {getTotalEventTime()}h</div>

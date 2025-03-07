@@ -3,6 +3,12 @@
 @use 'react-big-calendar/lib/css/react-big-calendar.css';
 @use 'calendar';
 
+html, body {
+  width: 700px;
+  height: 550px;
+  overflow: hidden;
+}
+
 #menu {
   height: 45px;
   display: flex;
@@ -16,6 +22,6 @@
     font-weight: bold;
   }
   .clear {
-    font-size: large;
+    font-size: larger;
   }
 }
