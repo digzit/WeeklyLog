@@ -1,3 +1,5 @@
+![Image Description](https://fv5-3.files.fm/thumb_show.php?i=aneh8va2j3&view&v=1&PHPSESSID=e19abe5e86a2e0c5247157f94f6d1d8dbbaa3f4a)
+
 # WeeklyLog
 
 WeeklyLog is a simple application to log time in intervals on a weekly view as a Chrome extension. It is built using Vite, React, TypeScript, and easy-peasy for state management.
@@ -8,6 +10,9 @@ WeeklyLog is a simple application to log time in intervals on a weekly view as a
 - Add, delete, and clear events
 - Persist events using local storage
 - Responsive and user-friendly interface
+
+![Image Description](https://fv5-3.files.fm/thumb_show.php?i=3zz35tbmt4&view&v=1&PHPSESSID=e19abe5e86a2e0c5247157f94f6d1d8dbbaa3f4a)
+![Image Description](https://fv5-3.files.fm/thumb_show.php?i=tqydvvgutm&view&v=1&PHPSESSID=e19abe5e86a2e0c5247157f94f6d1d8dbbaa3f4a)
 
 ## Installation
 
